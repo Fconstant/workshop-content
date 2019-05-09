@@ -1,0 +1,76 @@
+scalar DateTime
+
+enum Thread {
+    DEV
+    DESIGN
+    CITIES
+    IOT
+    BIZ
+    DATA
+}
+
+type Person {
+    name: String!
+    email: String
+}
+
+interface EventData {
+    title: String!
+    threads: [Thread!]
+    speaker: Person!
+}
+
+type Event implements EventData {
+    id: ID!
+    when: DateTime!
+
+    title: String!
+    threads: [Thread!]
+    speaker: Person!
+}
+
+type EventSubmission implements EventData {
+    id: ID!
+    materials: String
+    subject: String
+
+    title: String!
+    threads: [Thread!]
+    speaker: Person!
+}
+
+input GetEventsInput {
+    byTitle: String
+    byThread: Thread
+}
+
+input PersonInput {
+    name: String!
+    email: String!
+}
+
+input PostSubmissionInput {
+    title: String!
+    threads: [Thread!]
+    speaker: PersonInput!
+    materials: String
+    subject: String
+}
+
+type Query {
+    
+    "Busca todos os eventos do ONOVOLAB"
+    getEvents(filter: GetEventsInput): [Event]
+    
+    "PROTECTED: Busca todas as submissões"
+    getSubmissions(filter: GetEventsInput): [EventSubmission]
+}
+
+type Mutation {
+
+    "Cria uma submissão de evento"
+    postEventSubmission(input: PostSubmissionInput!): EventSubmission
+
+    "PROTECTED: Cria um evento com base numa submissão"
+    createEvent(submissionId: ID!, when: DateTime!): Event
+}

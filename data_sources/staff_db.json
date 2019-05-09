@@ -1,0 +1,12 @@
+[
+    {
+        "username": "yukio@onovolab.com",
+        "name": "Yukio Shibata",
+        "password": "123456"
+    },
+    {
+        "username": "felipe@onovolab.com",
+        "password": "123456",
+        "name": "Felipe Constantino"
+    }
+]

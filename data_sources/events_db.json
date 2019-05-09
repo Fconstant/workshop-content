@@ -1,0 +1,121 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Data Science aplicado no cotidiano",
+      "speaker": {
+        "email": "danilom@email.com",
+        "name": "Danilo Mendes"
+      },
+      "threads": [
+        "DATA",
+        "DEV"
+      ],
+      "when": "2019-05-28T19:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Sustentabilidade em Cidades",
+      "speaker": {
+        "email": "joao_neto@email.com",
+        "name": "João Neto"
+      },
+      "threads": [
+        "CITIES"
+      ],
+      "when": "2019-05-30T19:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Design Study",
+      "speaker": {
+        "email": "nuddes_amanda@email.com",
+        "name": "Amanda Nuddes"
+      },
+      "threads": [
+        "DESIGN"
+      ],
+      "when": "2019-05-22T20:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "IOT: Cidades inteligentes",
+      "speaker": {
+        "email": "paula_almeida@email.com",
+        "name": "Paula Almeida"
+      },
+      "threads": [
+        "IOT",
+        "CITIES"
+      ],
+      "when": "2019-06-04T19:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "Construindo uma API GraphQL em Node.js",
+      "speaker": {
+        "email": "felipe@onovolab.com",
+        "name": "Flip"
+      },
+      "threads": [
+        "DEV"
+      ],
+      "when": "2019-05-09T14:00:00.000Z"
+    },
+    {
+      "title": "Algum title",
+      "threads": [
+        "DEV",
+        "DESIGN"
+      ],
+      "speaker": {
+        "name": "Gustavo Some",
+        "email": "mail@onovolab.com"
+      },
+      "when": "2019-05-09T02:22:01.830Z",
+      "id": 8
+    }
+  ],
+  "submissions": [
+    {
+      "id": 1,
+      "event_title": "Growth Hacking 101: Expandindo seu negócio",
+      "materials": "Projetor e Caixa de som",
+      "subject": "Growth / Business",
+      "threads": [
+        "BIZ"
+      ],
+      "speaker": {
+        "name": "Laura Pacheco",
+        "email": "laurapacheco@email.com"
+      }
+    },
+    {
+      "event_title": "Uncovering Business Models",
+      "materials": "Projetor",
+      "subject": "Business",
+      "threads": [
+        "BIZ"
+      ],
+      "speaker": {
+        "name": "Arnaldo Paulli",
+        "email": "arnaldo@email.com"
+      },
+      "id": 2
+    },
+    {
+      "event_title": "Algum title",
+      "title": "Algum title",
+      "threads": [
+        "DEV",
+        "DESIGN"
+      ],
+      "speaker": {
+        "name": "Gustavo Some",
+        "email": "mail@onovolab.com"
+      },
+      "materials": "Some material",
+      "id": 3
+    }
+  ]
+}

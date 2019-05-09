@@ -1,0 +1,38 @@
+{
+  "name": "workshop-gql-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch src --exec npm start",
+    "start": "babel-node src/server.js",
+    "start:data-sources": "babel-node data_sources/index.js & babel-node data_sources/auth.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.4.0",
+    "apollo-server-express": "^2.5.0",
+    "basic-auth": "^2.0.1",
+    "core-js": "^3.0.1",
+    "graphql": "^14.3.0",
+    "graphql-import": "^0.7.1",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-tools": "^4.0.4",
+    "lodash": "^4.17.11",
+    "morgan": "^1.9.1",
+    "uuid": "^3.3.2",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "json-server": "^0.14.2",
+    "nodemon": "^1.19.0"
+  }
+}
